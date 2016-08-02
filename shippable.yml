@@ -10,3 +10,8 @@ build:
   ci:
     - npm install
     - npm test
+    - echo $SHIPPABLE_BUILD_DIR
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    - cd shippable/testresults
+    - pwd
