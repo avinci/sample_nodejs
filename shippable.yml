@@ -14,5 +14,20 @@ build:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
     - cd shippable/testresults
+    - wget https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.3.1.tar.gz
+    - cp ruby-2.3.1.tar.gz 1.gz
+    - cp ruby-2.3.1.tar.gz 2.gz
+    - cp ruby-2.3.1.tar.gz 3.gz
+    - cp ruby-2.3.1.tar.gz 4.gz
+    - cp ruby-2.3.1.tar.gz 5.gz
+    - cp ruby-2.3.1.tar.gz 6.gz
+    - cp ruby-2.3.1.tar.gz 7.gz
+    - cp ruby-2.3.1.tar.gz 8.gz
+    - cp ruby-2.3.1.tar.gz 9.gz
+    - cp ruby-2.3.1.tar.gz 10.gz
+    - cp ruby-2.3.1.tar.gz 11.gz
+    - cp ruby-2.3.1.tar.gz 12.gz
     - pwd    
   cache: true
+  cache_dir_list:
+    - $SHIPPABLE_BUILD_DIR  
